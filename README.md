@@ -17,6 +17,17 @@ A modular, multithreaded command-line To-Do List application written in C++. Des
 - `AutosaveWorker`: Background thread that saves tasks to `autosave.txt`
 - `Observer`: Interface for reactive components
 
+## 📐 Design Patterns Used
+This project uses the Observer Design Pattern to decouple task state changes from background operations like autosaving. The TaskManager class acts as the Subject, and AutosaveWorker is an Observer that reacts whenever tasks are added, started, or completed.
+
+This pattern ensures:
+
+🔔 Reactive updates without tight coupling
+
+🧵 Thread-safe notifications
+
+📦 Easy extensibility for future observers (e.g., logging, UI refresh)
+
 ## 🛠️ Build Instructions
 
 ```bash
