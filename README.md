@@ -43,6 +43,7 @@ make
 Requires CMake and a C++17-compatible compiler
 
 ## 📦 Commands
+```bash
 add <description> — Add a new task
 
 start <id> — Mark task as In Progress
@@ -52,8 +53,7 @@ complete <id> — Mark task as Completed
 list — Show all tasks
 
 exit — Quit the app
-
-
+```
 ## 📁 Autosave Format
 Saved to autosave.txt every 5 seconds:
 <id>,<status>,<description>
